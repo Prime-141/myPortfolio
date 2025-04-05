@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: wheat;
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            color: goldenrod;
+            text-align:justify
+        }
+        .container-wrapper {
+            display: flex;
+            
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00f, 0 0 10px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    
+}
+
+.image {
+    width: 200px;
+    height: auto;
+    border-radius: 40%;
+}
+
+.text {
+    font-size: 18px;
+    flex: 1;
+    color: white;
+}
+
+.visit-btn img {
+    width: 50px; /* Button image size */
+    transition: transform 0.3s ease-in-out;
+}
+
+.visit-btn img:hover {
+    transform: scale(1.2);
+     /* Button grows slightly when hovered */
+}
+
+/* Alternate image position for every second project */
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+body{
+    background-image: url(dark.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+            
+        }
+        button :hover{
+            background-color: darkred;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        @media only screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .container:nth-child(even) {
+        flex-direction: column; /* No reversal on small screens */
+      }
+
+      .image {
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      h1 {
+        flex-direction: column;
+        font-size: 22px;
+      }
+
+      .text {
+        font-size: 16px;
+      }
+
+      .container-wrapper {
+        gap: 20px;
+        padding: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .image {
+        width: 120px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      .text {
+        font-size: 14px;
+      }
+
+      .visit-btn img {
+        width: 40px;
+      }
+
+      button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; gap: 400px;">
+        <h1><u>This is my Handy Works!</u></h1>
+        <p style="color: red; font-size: 15px;"><i>Press the blue button to visit the website.</i></p>
+    </div>
+    <div class="container-wrapper">
+
+        <!-- Project 1 -->
+        <div class="container">
+            <img src="pro1.png" class="image" alt="Project 1">
+            <div class="text">
+                <h3><i>Music</i></h3>
+                <p>This was my first time taking project. In this i learned new tags of html such as ; video tag for video playing with controls, and audio tag with same controls. Every stylining is of Inline styling which makes the code very messy now but at that time it was begineer to html so it was ok to use patienly.</p>
+                <a href="music.html" class="visit-btn"><img id="im" src="button-1157299_960_720.webp"></a>
+            </div>
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="container">
+            <img src="spoider.png" class="image" alt="Project 2">
+            <div class="text">
+                <h3><i>Spider-Man Fan Page</i></h3>
+                <p>This is my second project . A project about Spider-Man using basic HTML and inline styling...</p>
+                <a href="predator.html" class="visit-btn"><img id="im" src="button-1157299_960_720.webp"></a>
+            </div>
+        </div>
+
+        <!--Project 3-->
+        <div class="container">
+            <img src="vishnu(8).png" class="image" alt="Project 3">
+            <div class="text">
+                <h3><i>Greeting Card</i></h3>
+                <p>This is one of upgraded one, as I make a greeting card with mostly use of Internal and external css. Which helps to be very comfortable instead of inline css. And i get to know about more diffrence between Inline, Internal and External. Many css property also uses while making this.</p>
+                <a href="labsheet2(a2).html" class="visit-btn"><img src="button-1157299_960_720.webp"></a>
+                
+            </div>
+        </div>
+
+        <!--Project 4-->
+        <div class="container">
+            <img src="menu.png" class="image" alt="Project 4">
+            <div class="text">
+                <h3><i>Menu Card</i></h3>
+                <p>This is the advance one from all above using of many new css styling , flex is one of them which makes website responsive.</p>
+                <a href="practise.html" class="visit-btn"><img src="button-1157299_960_720.webp"></a>
+            </div>
+        </div>
+    
+    </div>
+    <div>
+        <a href="projectphase1.html"><button>BACK TO HOME</button></a>
+    </div>
+    
+</body>
+</html>

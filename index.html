@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+    <style>
+        body{                                 
+            background-image: url(dark.jpg);  /*Applying bacground image */
+            background-position: center;      /* Position on center */
+            background-attachment: fixed;     /* Attachment of image as fixed */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;           /*  Image size full cover */
+        }
+        *{
+            text-decoration: none;  
+            box-sizing: border-box;       /* avioding underline */
+        }
+        .navbar{
+            margin: 0;
+            padding: 0;
+            color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #7c6c86, #0e1a40);
+            background-size: 400% 400%;
+            animation: neonBackground 10s ease infinite;
+        }
+        .navdiv{
+            display: flex;   /* applying flex to the items in navigation bar */
+            justify-content:center;
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .logo img{
+            width: 50px;  /*  stablizing the image size on navigation bar*/
+            display: flex; 
+            justify-content: space-around;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style-type: none; /* avoiding the bullet points (default) */
+            /* */
+        }
+        
+        li a{
+            color:rgb(251, 248, 249);
+            font-size: 18px;
+            font-weight: bold;
+            margin-right:20px;
+        }
+        li a:hover {
+    background-color: transparent;
+    color: #00ffea;
+    text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
+    font-size: 20px;
+    transition: 0.7s;
+    }
+       
+        .main-content {
+
+   
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.main-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.tagline, .footer-line {
+    font-size: 20px;
+    margin: 10px 0;
+    color: red;
+}
+        
+        /* Tablet view */
+@media only screen and (max-width: 1024px) {
+    .main-content h2 {
+        font-size: 26px;
+    }
+
+    .tagline, .footer-line {
+        font-size: 18px;
+    }
+
+    li a {
+        font-size: 16px;
+    }
+}
+
+/* Phone view */
+@media only screen and (max-width: 768px) {
+    .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    .main-content h2 {
+        font-size: 22px;
+    }
+
+    .tagline, .footer-line {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    li a {
+        margin-right: 0;
+    }
+}
+footer {
+    background-color: hsl(0, 2%, 20%);
+    color: white;
+    text-align: center;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    margin-top: 800px;
+
+}
+footer a {
+    color: red;
+}
+
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="pletter.jpg" alt="Logo"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="myself.html">AboutMe</a></li>
+                <li><a href="myworks.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.instagram.com/accounts/login/?hl=en" style="color: red;"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/feed/?trk=onboarding-landing" style="color: blue;"><i class="fa-brands fa-linkedin"></i></a></li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h2><i>"Welcome to my Portfolio!"</i></h2>
+        <div class="tagline">"With great power comes great web development!"</div>
+        <div class="footer-line">"Explore my projects and see what I’ve been building!"</div>
+    </div>
+    <footer>
+            <p>&copy; 2025 Prinav Kumar | <a href="contact.html">Contact Me</a> | <a href="myself.html">About Me</a></p>   
+    </footer>
+</body>
+</html>
