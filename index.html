@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PRIME</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
     <style>
         body{                                 
             background-image: url(dark.jpg);  /*Applying bacground image */
@@ -78,7 +77,7 @@
 .main-content h2 {
     font-size: 30px;
     margin-bottom: 20px;
-    color: red;
+    
 }
 
 .tagline, .footer-line {
@@ -130,6 +129,21 @@
     li a {
         margin-right: 0;
     }
+    .quote-right, .quote-left {
+        position: static;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .quote-right h3, .quote-left h3 {
+        font-size: 16px;
+    }
+    @media only screen and (max-width: 480px) {
+    .main-content h2 {
+        font-size: 18px;
+    }
+}
+
 }
 footer {
     background-color: hsl(0, 2%, 20%);
@@ -138,16 +152,57 @@ footer {
     padding: 1px;
     display: flex;
     justify-content: center;
-    margin-top: 800px;
+    margin-top: 500px;
 
 }
 footer a {
     color: red;
 }
+.neon{
+      color: #00ffff; /* bright cyan */
+      font-size: 3rem;
+      font-family: Arial, sans-serif;
+      text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #0ff,
+        0 0 80px #0ff;
+    }
+    .neonRed{
+        color: #ff0044;
+text-shadow:
+  0 0 5px #ff0044,
+  0 0 10px #ff0044,
+  0 0 20px #cc0033,
+  0 0 40px #990022,
+  0 0 80px #660011;
 
-        
+    }
+    .neonViolet{
+        color: #bf00ff;
+text-shadow:
+  0 0 5px #bf00ff,
+  0 0 10px #bf00ff,
+  0 0 20px #9900cc,
+  0 0 40px #660099,
+  0 0 80px #330066;
+
+    }  
+    .quote-right{
+        position: absolute;
+        bottom: 20%;
+        right: 1%;
+        max-width: 300px;
+    } 
+    .quote-left{
+        position: absolute;
+        bottom: 7%;
+        left: 1%;
+        max-width: 300px;
+    }
     </style>
-</head>
+</head>    
 <body>
     <nav class="navbar">
         <div class="navdiv">
@@ -166,9 +221,13 @@ footer a {
     </nav>
 
     <div class="main-content">
-        <h2><i>"Welcome to my Portfolio!"</i></h2>
-        <div class="tagline">"With great power comes great web development!"</div>
-        <div class="footer-line">"Explore my projects and see what I’ve been building!"</div>
+        <h2 class="neon"><i>"Neon Lights.<br> Digital Fights.<br> Welcome to my World!"</i></h2>
+    </div>
+    <div class="quote-right">
+        <h3 class="neonRed">"Code like a soldier. Deploy like a general."</h3>
+    </div>
+    <div class="quote-left">
+        <h3 class="neonViolet">Precision sharp,<br> like a blade in fight —<br> I code with honor, day and night.</h3>
     </div>
     <footer>
             <p>&copy; 2025 Prinav Kumar | <a href="contact.html">Contact Me</a> | <a href="myself.html">About Me</a></p>   
