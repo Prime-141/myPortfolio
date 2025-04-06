@@ -1,0 +1,32 @@
+
+        .d{
+            margin: auto;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(8, 24, 251);
+        }
+        img{
+            width: 300px;
+            height: auto;
+            margin-right: 30px;
+            border: 10px solid rgb(253, 212, 9);
+            border-style: groove;
+            float: left;
+            
+
+        }
+        .text{
+            overflow: hidden;
+            color: red;
+        }
+        body{
+            background-color: rgb(11, 16, 16);
+            border: 3px solid rgb(225, 255, 0);
+        }
+            
+
+
+    
