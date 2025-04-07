@@ -33,6 +33,17 @@
             flex:1;
             color: gold;
         }
+        .fixed-left, .fixed-right{
+            position: fixed;
+            bottom: 20px;
+            z-index: 1000;
+        }
+        .fixed-left{
+            left: 20px;
+        }
+        .fixed-right{
+            right: 20px;
+        }
         /* ✅ Media Query for Tablets (max-width: 768px) */
         @media screen and (max-width: 768px) {
             .container {
@@ -45,6 +56,14 @@
                 font-size: 22px;
                 text-align: center;
             }
+            .fixed-left, .fixed-right {
+            bottom: 15px;
+            }
+
+             button {
+        padding: 8px 16px;
+        font-size: 14px;
+           }
         }
 
         /* ✅ Media Query for Mobile Devices (max-width: 480px) */
@@ -61,11 +80,19 @@
             h2 {
                 font-size: 22px;
             }
+            .fixed-left, .fixed-right {
+        bottom: 10px;
+            }
+
+          button {
+        padding: 7px 14px;
+        font-size: 13px;
+         }
         }
         button{
             display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
+    justify-content: left;
     background-color: crimson;
     color: white;
     border-radius: 5px;
@@ -80,6 +107,8 @@
             background-color: darkred;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
+        
+        
         
     </style>
 </head>
@@ -125,8 +154,11 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="fixed-left">
         <a href="index.html"><button>BACK TO HOME</button></a>
+    </div>
+    <div class="fixed-right">
+        <a href="myworks.html"><button>PROJECTS</button></a>
     </div>
     
 </body>
